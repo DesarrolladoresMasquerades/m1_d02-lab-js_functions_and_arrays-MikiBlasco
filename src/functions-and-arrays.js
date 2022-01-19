@@ -80,18 +80,33 @@ const wordsUnique = [
   'simple',
   'bring'
 ];
+ [1, 0, 0, 0, 1]
 
-function uniquifyArray(arr) {
-for (let i = 0; i>wordsUnique.length; i++){
-  if (wordsUnique.indexOf(i) > 1) wordsUnique.splice(i)
-}
-
-
-
+function uniquifyArray(wordsUnique) {
+  if(wordsUnique.length === 0) return null
+  newArr = []
+    wordsUnique.forEach((value, index) => {
+      if(wordsUnique.indexOf(value) === index) {
+        newArr.push(value)
+      }
+    });
+    return newArr
+   }
+    
+  
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist(arr, word) {
+  if(arr.length === 0) return null
+let wordExist 
+for (let i = 0; i<arr.length; i++) {
+  if (arr[i] !== word) wordExist = false
+  else if (arr[i] === word) wordExist = true
+}
+return wordExist
+
+}
 
 
 
