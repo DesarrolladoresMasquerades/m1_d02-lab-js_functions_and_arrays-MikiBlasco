@@ -94,7 +94,7 @@ function uniquifyArray(wordsUnique) {
    }
     
   
-// Iteration #6: Find elements
+// Iteration #6: Find elementss
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
 function doesWordExist(arr, word) {
